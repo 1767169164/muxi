@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>煎饼的自我介绍</title>
+
+<style>
+    body {
+        background-color: rgb(127, 165, 208);
+    }
+    
+    .bighezi {
+        width: 1000px;
+        height: 900px;
+        margin: 0 auto;
+        background-color: rgb(247, 241, 241);
+    }
+    .flathezi{
+        width: 300px;
+        height: 900px;
+        float:left;
+        position: relative;/*添加相对定位*/
+        background: #121e2e;
+
+    }
+    .righthezi{
+        width: 700px;
+        height: 900px;
+        float: right;
+        position: relative;/*添加相对定位*/
+        background-color: rgb(255, 255, 255);
+    }
+    .touxiang{
+        height: 210px;
+        width: 200px;
+
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 50px;
+	    top:55px;
+        /* background-color: rgb(176, 90, 90); */
+    }
+    .infomation{
+        height: 510px;
+        width: 250px;
+
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 25px;
+	    top:57px;
+        /* background-color: rgb(200, 53, 83); */
+    }
+    .youshangjiao{
+        /* height: 410px; */
+        width: 600px;
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 55px;
+	    top:45px;
+        /* background-color: rgb(200, 53, 83); */
+    }
+    .youxiajiao{
+        /* height: 410px; */
+        width: 600px;
+
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 55px;
+	    top:95px;
+        /* background-color: rgb(53, 100, 200); */
+    }
+    img{
+        max-width: 100%;
+    }
+    .name{
+        height: 80px;
+        width: 250px;
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 25px;
+	    top:100px;
+        /* background-color: rgb(200, 200, 53); */
+    }
+    .name1 {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        height: 74px;
+        line-height: 4px;
+        margin-left: 56px;
+        font-family:"微软雅黑";
+    }
+    .biaoti1{
+        height: 70px;
+        width: 250px;
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 0px;
+	    top:0px;
+        /* background-color: rgb(176, 158, 162); */
+    }
+    .zuobian{
+        width: 45px;
+        height: 45px;
+    transform: rotate(45deg);
+    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 11px;
+	    top:9px;
+    /* background-color: #87a7d6; */
+    } 
+    .zuobian>img{
+        transform: rotate(-45deg) scale(1.00);
+       
+    }
+    .jibenxinxi{
+        
+        position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 89px;
+	    top:-53px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-family:"微软雅黑";
+    }
+    .info01{
+        width: 25px;
+        height:25px;
+        border: 3px #fefefe solid;
+        border-radius: 100px;
+
+        position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 15px;
+	    top:0px;
+    }
+    li{
+        margin:15px 0;
+        height: 31px;
+        list-style-type: none;
+        /* background-color: rgb(169, 95, 95); */
+        position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: -39px;
+	    top:-13px;
+
+    }
+    li > h5{
+        position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 62px;
+	    top:-46px;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
+    }
+    .ziwopingjia{
+        height: 70px;
+	    position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 0px;
+	    top:0px;
+        /* background-color: rgb(176, 158, 162); */
+    }
+    .ziwopingjia > img{
+        width: 55px;
+        height: 55px;
+    }
+    .ziwopingjia >span{
+        position: relative;/*添加相对定位，避免因为浏览器缩放而发生的冲突*/
+	    left: 5px;
+	    top:-12px;
+        color: #215ead;
+        font-size: 23px;
+        font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+    }
+    .zwneirong{
+        
+        background-color: #fff;
+    }
+    .zwneirong > p{
+        text-align: justify; 
+        text-justify: inter-ideograph; 
+        text-indent: 2em;
+        line-height: 25px;
+        color: #121e2e;
+        font-size: 15px;
+        font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+    <!-- 个人介绍主要盒子 -->
+<div class="bighezi">
+    <!-- 左边大盒子 -->
+    <div class="flathezi">
+        <!-- 头像照片 -->
+        <div class="touxiang">
+                <!-- 此处放照片 -->
+                <img src="头像.jpg" alt="">
+        </div>
+        <!-- 姓名盒子 -->
+        <div class="name">
+            <h3 class="name1">姓名:&nbsp;&nbsp;木兮</h3>
+        </div>
+    
+        <!-- 个人信息盒子 -->
+        <div class="infomation">
+                <!-- 放基本信息标题的盒子 -->
+                <div class="biaoti1">
+                    <div class="zuobian">
+                        <img src="infomation.png" alt="">
+                        
+                    </div>
+
+                    <h3 class="jibenxinxi">基本信息</h3>
+                  
+                    
+                </div>
+                <!-- 开始写详细的个人信息 -->
+                <ul>
+                    <!-- 第一个li -->
+                    <li>
+                            <div class="info01">
+                                <img src="日期.png" alt=""> 
+                            </div>
+                            <h5>出生:&nbsp;&nbsp;2000.8.20</h5>
+                    </li>
+                    <!-- 第二个li -->
+                    <li>
+                        <div class="info01">
+                            <img src="身份户籍.png" alt=""> 
+                        </div>
+                        <h5>名族:&nbsp;&nbsp;汉</h5>
+                </li>
+                 <!-- 第三个li -->
+                 <li>
+                    <div class="info01">
+                        <img src="性别-女.png" alt=""> 
+                    </div>
+                    <h5>性别:&nbsp;&nbsp;女</h5>
+            </li>
+                      <!-- 第四个li -->
+                      <li>
+                        <div class="info01">
+                            <img src="电话.png" alt=""> 
+                        </div>
+                        <h5>电话:&nbsp;&nbsp;18228995943</h5>
+                </li>
+                    <!-- 第五个li -->
+                    <li>
+                        <div class="info01">
+                            <img src="首页.png" alt=""> 
+                        </div>
+                        <h5>籍贯:&nbsp;&nbsp;四川泸州</h5>
+                </li>
+                <!-- 第六个li -->
+                <li>
+                    <div class="info01">
+                        <img src="导航地址.png" alt=""> 
+                    </div>
+                    <h5>住址:&nbsp;&nbsp;宜宾市翠屏区沙坪街道四川轻化工大学</h5>
+            </li>
+                 <!-- 第七个li -->
+                 <li>
+                    <div class="info01">
+                        <img src="日期.png" alt=""> 
+                    </div>
+                    <h5>邮箱:&nbsp;&nbsp;1767169164@qq.com</h5>
+                </li>
+                 <!-- 第八个li -->
+                 <li>
+                    <div class="info01">
+                        <img src="性别-女.png" alt=""> 
+                    </div>
+                    <h5>政治面貌:&nbsp;&nbsp;共青团员</h5>
+            </li>
+
+                </ul>
+        </div>
+
+
+    </div>
+
+
+    <!-- 右边大盒子 -->
+    <div class="righthezi">
+
+        <!-- 右上边的盒子 -->
+        <div class="youxiajiao">
+            <!-- 标题 -->
+            <div class="ziwopingjia">
+                <img src="自我评价.png" alt="">
+                <span>自我评价</span>
+                <hr>
+            </div>
+
+            <!-- 自我评价模块内容 -->
+            <div class="zwneirong">
+                <p>
+                    本人性格文静，待人友好，为人诚实谦虚，善于思考，学习能力强。专业知识较扎实，能够熟练操作办公系统软件，对新事物接受能力快，工作主动性高，做事认真负责。但人非完人，自己在某些方面还是有一定的不足，比如知识，社会经验等，不过我相信这些都是可以通过自己努力的学习来提高的，我也正朝着这个方向努力！
+                </p>
+            </div>
+
+        </div>
+
+        <!-- 右下边盒子 -->
+        <div class="youxiajiao">
+                        <!-- 标题 -->
+                        <div class="ziwopingjia">
+                            <img src="教育背景.png" alt="">
+                            <span>教育背景</span>
+                            <hr>
+                        </div>
+            
+                        <!-- 自我评价模块内容 -->
+                        <div class="zwneirong">
+                            <p>
+                               2020-2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四川轻化工大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算机科学与技术(本科)
+                               <br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主修课程：JAVA面向对象程序设计&nbsp;&nbsp;数据结构和算法&nbsp;&nbsp;数据库系统原理&nbsp;&nbsp;操作系统&nbsp;&nbsp;C++程序设计&nbsp;&nbsp;计算机组成原理&nbsp;&nbsp;计算机网络&nbsp;&nbsp;Python程序设计&nbsp;&nbsp;C语言程序设计</br>
+                            </p>
+                        </div>
+
+
+        </div>
+                <!-- 右下边第二个盒子 -->
+                <div class="youxiajiao">
+                    <!-- 标题 -->
+                    <div class="ziwopingjia">
+                        <img src="爱好.png" alt="">
+                        <span>爱好特长</span>
+                        <hr>
+                    </div>
+        
+                    <!-- 自我评价模块内容 -->
+                    <div class="zwneirong">
+                        <p>
+                            爱好：音乐，阅读，跑步，羽毛球，游泳。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;特长：民谣弹唱。
+                        </p>
+                    </div>
+
+                </div>
+                <!-- 右下边第二个盒子 -->
+                <div class="youxiajiao">
+                    <!-- 标题 -->
+                    <div class="ziwopingjia">
+                        <img src="荣誉.png" alt="">
+                        <span>荣誉</span>
+                        <hr>
+                    </div>
+        
+                    <!-- 自我评价模块内容 -->
+                    <div class="zwneirong">
+                        <p>
+                            四川轻化工大学三等奖学金
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;互联网+校级优秀奖
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通话二级甲等
+                          <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C1驾驶证
+                           
+                    </div>
+
+                </div>
+        
+    </div>
+
+    </div>
+    
+</div>
+    
+</body>
+</html>
